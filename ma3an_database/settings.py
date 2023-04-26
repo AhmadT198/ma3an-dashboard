@@ -50,14 +50,17 @@ INSTALLED_APPS = [
 X_FRAME_OPTIONS = "SAMEORIGIN"
 SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
-STATIC_URL = '/static/'
+print(BASE_DIR)
+STATIC_URL = '/data/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, ''),
     os.path.join(BASE_DIR, 'admin-interface/logo'),
 
 )
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+MEDIA_URL = '/media/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
