@@ -52,7 +52,7 @@ SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/'),
+    os.path.join(BASE_DIR, ''),
     os.path.join(BASE_DIR, 'admin-interface/logo'),
 
 )
