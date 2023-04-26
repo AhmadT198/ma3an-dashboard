@@ -97,10 +97,10 @@ class PhoneNumber(models.Model):
             return display_name
 
 class Image(models.Model):
-    image = models.ImageField(upload_to="eventPics")
+    image = models.ImageField(upload_to="static/eventPics")
 
 class Document(models.Model):
-    file = models.FileField(upload_to="files")
+    file = models.FileField(upload_to="static/files")
 
     def __str__(self):
         display_name = str(self.file)

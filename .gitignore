@@ -164,10 +164,11 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-staticfiles/
+static/
 
 files/
 
+eventPics/
 
 .idea/
 

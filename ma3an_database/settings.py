@@ -54,8 +54,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, ''),
     os.path.join(BASE_DIR, 'admin-interface/logo'),
+    os.path.join(BASE_DIR, 'eventPics/'),
+    os.path.join(BASE_DIR, 'files/'),
+
 )
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
